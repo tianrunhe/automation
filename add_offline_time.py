@@ -45,8 +45,9 @@ def main():
         print('No data found.')
     else:
         durations = []
-        row_number = 2
+        row_number = 1
         for row in values:
+            row_number = row_number + 1
             time_point = row[0]
             activity_type = row[1]
             logged = len(row) >= 3 and row[2] == 'True'
